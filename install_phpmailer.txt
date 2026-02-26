@@ -1,0 +1,28 @@
+STEPS TO INSTALL PHPMAILER:
+
+1. Open Command Prompt (CMD) as Administrator
+
+2. Navigate to your project folder:
+   cd C:\xampp\htdocs\citizen
+
+3. Install Composer (if not installed):
+   Download from: https://getcomposer.org/download/
+
+4. Install PHPMailer:
+   composer require phpmailer/phpmailer
+
+5. Setup Gmail App Password:
+   - Go to Google Account Settings
+   - Security > 2-Step Verification (enable it)
+   - Security > App passwords
+   - Generate new app password
+   - Copy the 16-character password
+
+6. Edit send_email.php:
+   - Line 13: Change 'your-email@gmail.com' to your Gmail
+   - Line 14: Change 'your-app-password' to the app password from step 5
+   - Line 19: Change 'your-email@gmail.com' to your Gmail
+
+7. Test by uploading CSV file in dean portal
+
+DONE!
