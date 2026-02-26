@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Add Column</title>
+</head>
+<body>
+    <button onclick="testAdd()">Test Add Quiz 5</button>
+    <div id="result"></div>
+    
+    <script>
+    function testAdd() {
+        const name = 'Quiz 5';
+        const isQuiz = name.toLowerCase().includes('quiz');
+        const isActivity = name.toLowerCase().includes('act');
+        
+        document.getElementById('result').innerHTML = `
+            Name: ${name}<br>
+            Is Quiz: ${isQuiz}<br>
+            Is Activity: ${isActivity}<br>
+            Category: ${isQuiz ? 'quiz' : (isActivity ? 'activity' : 'other')}
+        `;
+        
+        console.log('Testing column add...');
+        console.log('Name:', name);
+        console.log('Is Quiz:', isQuiz);
+        console.log('Category:', isQuiz ? 'quiz' : (isActivity ? 'activity' : 'other'));
+    }
+    </script>
+</body>
+</html>
